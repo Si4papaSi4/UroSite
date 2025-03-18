@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ошибка 502 - Bad Gateway</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 5rem;
+            color: #d9534f;
+        }
+        h2 {
+            font-size: 1.5rem;
+            color: #5a5a5a;
+        }
+        .shapes {
+            margin-top: 30px;
+        }
+        .shape {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #f87171;
+            margin: 0 10px;
+        }
+        .shape:nth-child(2) {
+            background-color: #ef4444;
+        }
+        .shape:nth-child(3) {
+            background-color: #b91c1c;
+        }
+        p {
+            margin-top: 20px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>502</h1>
+        <h2>Ошибка шлюза</h2>
+        <div class="shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <p>Похоже, что произошла ошибка при попытке соединения с сервером. Пожалуйста, попробуйте позже.</p>
+    </div>
+</body>
+</html>
