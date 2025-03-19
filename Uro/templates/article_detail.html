@@ -155,7 +155,7 @@
       class="article-content u-text-custom-color-5">{{ article.content|linebreaks }}</div>
     <div class="article-extra-images">
       {% for img in images %}
-        <div class="article-image">
+        <div class="article-extra-image">
           <img src="{{ img.image.url }}" alt="{{ img.caption }}">
           {% if img.caption %}
             <p class="image-caption">{{ img.caption }}</p>

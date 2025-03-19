@@ -2303,29 +2303,32 @@
     line-height: 1.6; /* межстрочный интервал */
     color: #555; /* слегка приглушённый цвет */
 }
-
-/* Контейнер для всех дополнительных изображений */
 .article-extra-images {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;              /* расстояние между элементами */
+  gap: 20px;
   justify-content: center;
   margin-top: 20px;
 }
 
 /* Блок для каждого изображения */
 .article-extra-image {
-  flex: 1 1 300px;        /* базовая ширина 300px, элементы растягиваются при наличии места */
+  flex: 1 1 300px;
   max-width: 300px;
   position: relative;
+  overflow: hidden; /* Скрывает выходящие части */
+  border-radius: 5px; /* Добавляем скругление */
 }
 
 /* Стили для изображения внутри блока */
 .article-extra-image img {
   width: 100%;
-  border-radius: 5px;     /* скругление углов, как у главного изображения */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* лёгкая тень */
+  height: auto; /* Чтобы не растягивалось */
   display: block;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  object-fit: contain; /* Гарантирует, что изображение полностью впишется */
+  max-width: 100%; /* Предотвращает выход за границы */
 }
 
 /* Стили для подписи к изображению */
@@ -2335,5 +2338,4 @@
   margin-top: 10px;
   color: #666;
 }
-
 
